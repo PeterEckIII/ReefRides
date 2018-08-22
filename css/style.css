@@ -1,7 +1,7 @@
 /* Setting basic reset */
 *,
-x::after,
-x::before {
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
