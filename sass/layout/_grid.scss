@@ -1,6 +1,5 @@
 .row {
     max-width: $grid-width;
-    background-color: #fff;
     margin: 0 auto;
     padding: 1.5rem;
 
@@ -15,9 +14,8 @@
     // * indicates "contains"
     // $ indicates "ends with"
     [class^="col-"] {
-        background-color: blue;
         float: left;
-        color: white;
+        color: black;
         text-align: center;
 
         &:not(:last-child) {
