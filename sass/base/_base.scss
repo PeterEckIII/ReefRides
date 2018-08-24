@@ -1,0 +1,20 @@
+/* Setting basic reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    /* Setting the root font-size so we can convert all px to rem for responsiveness */
+    /* 10px is really easy to use for the root font size. Just divide all px sizes by 10 and you have their rem */
+    /* Setting font-size to 62.5% which is 16px / 10px = 0.625 = 62.5%  |  16px is the default font-size for browsers */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
