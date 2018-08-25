@@ -5,6 +5,7 @@
     background-image: linear-gradient( to right bottom, $primary-color-light, $primary-color-dark), url(../img/reef.jpg);
     background-size: cover;
     background-position: top;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 78vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 78vh, 0 100%);
     &__logo-box {
         position: absolute;
