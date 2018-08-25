@@ -28,3 +28,27 @@
     padding: 15rem 0;
     position: relative;
 }
+
+.section-booking {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+}
+
+.booking {
+    // The following background-image property is an example of a solid-gradient --> putting the second rgba() at 50% to match the 50% in the third property
+    // allows us to cut off the gradient right at the halfway point
+    background-image: linear-gradient(105deg, 
+                    rgba($color-white, .9) 0%,
+                    rgba($color-white, .9) 50%,
+                     transparent 50%),
+                      url(../../img/beach-4.jpeg);
+    background-size: 100%;
+    height: 50rem;
+    border-radius: $border-radius;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}
