@@ -14,6 +14,10 @@ html {
     /* Setting font-size to 62.5% which is 16px / 10px = 0.625 = 62.5%  |  16px is the default font-size for browsers */
     font-size: 62.5%;
 
+    // We organize the media queries in this order because if tab-port was above tab-land, they'd both apply, overriding tab-port since tab-land
+    // is the last media query (the cascade)
+    // If this was a mobile-first design, we'd want the lower media queries first, and the higher queries last! 
+
     @include respond(tab-land) { // width < 900?
         font-size: 56.25%; // 1rem = 9px 9/16 = 56.25%
     }
@@ -29,4 +33,9 @@ html {
 
 body {
     box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
